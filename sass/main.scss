@@ -1,0 +1,135 @@
+@import "layout/header";
+.class1 {
+ color: #CBCBCB
+}
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;800&display=swap');
+/*fonts
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+:root {
+    --go-accent:#2B5EED;
+    --go-buttons:#CEBE37;
+    --go-background:#F6F6F6;
+    --go-light:#CBCBCB;
+    --go-light-plus:#999999;
+    --go-black:#242424;
+    --Montserrat:'Montserrat', sans-serif;
+    --Inter:'Inter', sans-serif;
+    --Open-sans:'Open Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*main*/
+.main {
+    background:url(/media/Main-background.svg);
+    background-position: right;
+    background-size: cover;
+    height:800px;
+}
+.main .wrapper {
+    max-width:1200px;
+    margin:0 auto;
+}
+h1 {
+    font-family: var(--Montserrat);
+max-width: 704px;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
+color:$color-primary;
+padding-top:256px;
+}
+.description {
+    font-family: 'Montserrat';
+max-width:621px;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+margin-top:12px;
+}
+
+/*Laptom*/
+@media (max-width: 1200px) {
+    h1 {
+        padding-top:100px;
+        line-height:69px;
+        font-size:48px;
+    }
+    /*UI*/
+    .dws-menu > ul li a {
+        padding:15px 7px 7px;
+    }
+    header {
+        padding:15px;
+    }
+    .main {
+        background-position: center;
+    }
+    .main .wrapper {
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
+/*мобилка*/
+@media (max-width: 845px) {
+    .header {
+        display:block;
+        max-height:unset;
+    }
+    .header-logo {
+        text-align:center;
+    }
+}
+@media (max-width: 620px) {
+ .header-logo img{
+     width:140px;
+ }
+ .header {
+     display:block;
+     max-height:100%;
+ }
+ .dws-menu li > ul li {
+     left:20%;
+ }
+ .dws-menu > ul {
+     display:block;
+ }
+
+ .header-logo {
+     text-align:center;
+ }
+ .dws-menu > ul li {
+     max-width:40%;
+ }
+ .dws-menu li ul {
+     left:40%;
+     top:0;
+ }
+ h1 {
+     padding:20px 0;
+     font-size:28px;
+     line-height:40px;
+     text-align:center;
+ }
+ .dws-menu > ul li .btn--gold {
+     margin-top:15px;
+ }
+  .description {
+     font-size:18px;
+ }
+}
